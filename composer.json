@@ -15,7 +15,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "TranslationChecker\\LangChecker\\Providers\\LangCheckerServiceProvider"
+                "TranslationChecker\\Providers\\LangCheckerServiceProvider"
             ]
         }
     },
