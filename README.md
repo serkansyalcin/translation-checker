@@ -1,6 +1,9 @@
 # Browsing Language Files
 ### You can scan the files and keys inside by reading all the language folders in the lang folder.
 
+### To install it in your Laravel project:
+**composer require serkansyalcin/translation-checker**
+
 #### Running the Command
 
 ```php
