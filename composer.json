@@ -5,7 +5,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "TranslationChecker\\LangChecker\\": "src/"
+            "TranslationChecker\\": "src/"
         }
     },
     "require": {
