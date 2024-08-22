@@ -3,6 +3,8 @@
 namespace TranslationChecker\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use TranslationChecker\Console\Commands\CheckMissingTranslations;
+
 
 class LangCheckerServiceProvider extends ServiceProvider
 {
