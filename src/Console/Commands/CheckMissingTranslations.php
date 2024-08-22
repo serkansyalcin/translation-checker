@@ -1,6 +1,6 @@
 <?php
 
-namespace TranslationCchecker\LangChecker\Console\Commands;
+namespace TranslationChecker\LangChecker\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;

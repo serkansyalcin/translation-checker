@@ -1,6 +1,6 @@
 <?php
 
-namespace TranslationCchecker\LangChecker\Providers;
+namespace TranslationChecker\LangChecker\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

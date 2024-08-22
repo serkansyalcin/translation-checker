@@ -1,23 +1,23 @@
 {
-    "name": "pc/translation-checker",
-    "description": "To find missing translations in language files during the localization process in Laravel.",
+    "name": "serkansyalcin/translation-checker",
+    "description": "A Laravel package to check for missing translations across languages.",
+    "type": "library",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Pc\\TranslationChecker\\": "src/"
+            "TranslationChecker\\LangChecker\\": "src/"
         }
     },
-    "authors": [
-        {
-            "name": "Serkan Yalçın",
-            "email": "serkan.syalcin@hotmail.com"
-        }
-    ],
+    "require": {
+        "php": ">=7.4",
+        "illuminate/support": "^8.0|^9.0|^10.0"
+    },
     "extra": {
         "laravel": {
             "providers": [
-                "TranslationCchecker\\LangChecker\\Providers\\LangCheckerServiceProvider"
+                "TranslationChecker\\LangChecker\\Providers\\LangCheckerServiceProvider"
             ]
         }
     },
-    "require": {}
+    "keywords": ["laravel", "localization", "translation", "missing keys", "lang"]
 }
