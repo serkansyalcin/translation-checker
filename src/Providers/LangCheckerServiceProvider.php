@@ -14,7 +14,7 @@ class LangCheckerServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->commands([
-            TranslationChecker\Providers\LangCheckerServiceProvider::class,
+            CheckMissingTranslations::class,
         ]);
     }
 }
