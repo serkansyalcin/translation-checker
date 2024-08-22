@@ -8,9 +8,16 @@
     },
     "authors": [
         {
-            "name": "serkansyalcin",
+            "name": "Serkan Yalçın",
             "email": "serkan.syalcin@hotmail.com"
         }
     ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TranslationCchecker\\LangChecker\\Providers\\LangCheckerServiceProvider"
+            ]
+        }
+    },
     "require": {}
 }
