@@ -1,0 +1,35 @@
+# Compiled class files
+/bootstrap/cache
+/storage/framework/*
+
+# Configuration
+/config/database.php
+
+# Public/user defined assets
+/public/css
+/public/js
+/public/images
+
+# IDE file
+.idea
+
+# Logs
+/storage/logs
+
+# Session
+/storage/sessions
+
+# Composer dependencies
+/vendor
+
+# PHPUnit cache
+/phpunit.xml.cache
+
+# IDE file
+.phpstorm.meta.php
+
+# Laravel Sail
+vendor/sail
+
+# Laravel Mix
+node_modules

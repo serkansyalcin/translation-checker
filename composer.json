@@ -1,0 +1,16 @@
+{
+    "name": "pc/translation-checker",
+    "description": "To find missing translations in language files during the localization process in Laravel.",
+    "autoload": {
+        "psr-4": {
+            "Pc\\TranslationChecker\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "serkansyalcin",
+            "email": "serkan.syalcin@hotmail.com"
+        }
+    ],
+    "require": {}
+}
