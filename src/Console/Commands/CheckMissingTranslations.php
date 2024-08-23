@@ -13,9 +13,21 @@ class CheckMissingTranslations extends Command
 
     public function handle()
     {
-        $defaultLang = 'en'; // Change this to your default language
+        $defaultLang = 'en';
+        $defaultLangFiles = [];
+
         $langPath = resource_path('lang');
-        $defaultLangFiles = File::allFiles($langPath . '/' . $defaultLang);
+        if (File::exists($langPath . '/' . $defaultLang)) {
+            $defaultLangFiles = File::allFiles($langPath . '/' . $defaultLang);
+        }
+
+        // If there are no language files in the resource path('lang'), let's check the lang folder in the main directory.
+        if (empty($defaultLangFiles)) {
+            $langPath = base_path('lang');
+            if (File::exists($langPath . '/' . $defaultLang)) {
+                $defaultLangFiles = File::allFiles($langPath . '/' . $defaultLang);
+            }
+        }
 
         $missingTranslations = [];
 
