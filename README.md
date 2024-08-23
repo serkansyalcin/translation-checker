@@ -20,6 +20,7 @@ Example Output
 When you run the command, the output will be formatted as follows:,
 
 Scanning language files...
+
 Missing translations in [ar]:
 - instructor.php:
   - about
