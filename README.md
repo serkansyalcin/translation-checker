@@ -1,21 +1,46 @@
-# Browsing Language Files
-### You can scan the files and keys inside by reading all the language folders in the lang folder.
+# Translation Checker
 
-### To install it in your Laravel project:
-**composer require serkansyalcin/translation-checker**
+## Overview
+The Translation Checker package helps you identify missing translation keys across your language files by scanning all language folders within the `lang` directory.
 
-#### Running the Command
+## Installation
 
-```php
+To install the package in your Laravel project, run:
+
+```bash
+composer require serkansyalcin/translation-checker
+```
+Usage
+Run the following command to check for missing translations:
+```bash
 php artisan lang:check-missing
 ```
-**When you run this command, the result will look like this:**
-Missing translations in [fr]:
-- auth.php:
-  - login
-  - password
-- validation.php:
-  - required.name
-  - required.email
-Missing translations in [de]:
-- messages.php: File is missing.
+
+Example Output
+When you run the command, the output will be formatted as follows:,
+
+Scanning language files...
+Missing translations in [ar]:
+- instructor.php:
+  - about
+  - profile-photo
+
+Missing translations in [ru]:
+- instructor.php:
+  - about
+  - profile-photo
+
+Missing translations in [tr]:
+- instructor.php:
+  - about
+  - profile-photo
+
+Summary:
+- 2 keys missing in [ar]
+- 2 keys missing in [ru]
+- 2 keys missing in [tr]
+ 
+### Key Features
+Scans all language folders and files within your lang directory.
+Reports missing translation keys and files in a clear and organized format.
+Supports nested translation keys.
