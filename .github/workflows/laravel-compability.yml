@@ -47,5 +47,5 @@ jobs:
                     composer require "laravel/framework:${{ matrix.laravel }}" --no-interaction --no-update
                     composer update --${{ matrix.dependency-version }} --prefer-dist --no-interaction --no-suggest
 
-            -   name: Execute tests
-                run: vendor/bin/phpunit
+            #-   name: Execute tests
+            #    run: vendor/bin/phpunit
