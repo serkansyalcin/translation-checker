@@ -7,13 +7,13 @@ use Illuminate\Support\Facades\File;
 
 class CheckMissingTranslations extends Command
 {
-    protected $signature = 'lang:check-missing';
+    protected $signature = 'lang:check-missing {--default=en : Default language to compare against}';
 
     protected $description = 'Checks for missing translations in all language files.';
 
     public function handle()
     {
-        $defaultLang = 'en';
+        $defaultLang = $this->option('default');
         $defaultLangFiles = [];
 
         $langPath = resource_path('lang');
